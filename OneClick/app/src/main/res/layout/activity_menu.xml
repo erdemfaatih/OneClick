@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtRestaurantNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/item_layout_bg"
+        android:backgroundTint="@color/purple_500"
+        >
+
+        <TextView
+            android:id="@+id/txtMenuName"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="4"
+            android:text="MENU NAME"
+            android:textColor="@color/title_text"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtMenuContent"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="5"
+            android:text="MENU CONTENT"
+            android:textColor="@color/title_text"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtMenuPrice"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="PRICE"
+            android:textColor="@color/title_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menusRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReservation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"
+            android:text="Reservation"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Location"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:stateListAnimator="@null" />
+    </LinearLayout>
+
+</LinearLayout>

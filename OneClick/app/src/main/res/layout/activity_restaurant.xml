@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityUser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:background="@color/title_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtRestaurantDistance"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="RESTAURANT NAME"
+            android:textColor="@color/title_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtRestaurantDensity"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="DENSITY"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/title_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtRestaurantName"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_marginRight="7dp"
+            android:text="DISTANCE"
+            android:textColor="@color/title_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_layout_bg"
+    tools:context=".Reservation">
+
+    <TextView
+        android:id="@+id/txtReservationRestaurantName"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="124dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="287dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="67dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveReservation"
+        app:layout_constraintEnd_toEndOf="@+id/txtTime"
+        app:layout_constraintStart_toStartOf="@+id/txtTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtReservationRestaurantName" />
+
+    <EditText
+        android:id="@+id/txtTime"
+        android:layout_width="287dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="46dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <Button
+        android:id="@+id/btnSaveReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="302dp"
+        android:text="Reservation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
